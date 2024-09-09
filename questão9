@@ -1,0 +1,7 @@
+login = input("Digite seu login: ")
+senha = input("Digite sua senha: ")
+
+if login == "ifrn" and senha == "integrado":
+    print("Bem-vindo")
+else:
+    print("Acesso negado")

@@ -1,0 +1,18 @@
+def calcular_convites(custo_espetaculo, preco_convite):
+    if preco_convite <= 0:
+        print("O preço do convite deve ser maior que zero.")
+        return None
+    
+    quantidade_convites = custo_espetaculo / preco_convite
+    return int(quantidade_convites) + (1 if quantidade_convites % 1 > 0 else 0)
+
+
+custo_espetaculo = float(input("Digite o custo do espetáculo: "))
+preco_convite = float(input("Digite o preço do convite: R$ "))
+
+
+quantidade = calcular_convites(custo_espetaculo, preco_convite)
+
+if quantidade is not None:
+    print(f"A quantidade de convites que devem ser vendidos é: {quantidade}")
+

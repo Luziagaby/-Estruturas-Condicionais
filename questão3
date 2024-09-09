@@ -1,0 +1,20 @@
+def situacao_aluno(media, frequencia):
+    if frequencia < 70:
+        return "Reprovado"
+    
+    if media >= 60:
+        return "Aprovado"
+    elif media >= 40:
+        return "Recuperação"
+    else:
+        return "Reprovado"
+
+media = float(input("Digite a média do aluno: "))
+frequencia = float(input("Digite a frequência do aluno (em %): "))
+
+situacao = situacao_aluno(media, frequencia)
+
+print(f"Média: {media}")
+print(f"Frequência: {frequencia}%")
+print(f"Situação: {situacao}")
+

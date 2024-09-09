@@ -1,0 +1,19 @@
+def situacao_aluno(luzia, media):
+    if media >= 60:
+        situacao = "Aprovado"
+    elif media >= 40:
+        situacao = "Recuperação"
+    else:
+        situacao = "Reprovado"
+    
+    return situacao
+
+nome = input("Digite o nome do aluno: ")
+media = float(input("Digite a média do aluno: "))
+
+situacao = situacao_aluno(nome, media)
+
+
+print(f"Nome: {nome}")
+print(f"Média: {media}")
+print(f"Situação: {situacao}")

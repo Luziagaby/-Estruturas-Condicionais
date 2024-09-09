@@ -1,0 +1,8 @@
+a = int(input("Digite o primeiro número (a): "))
+b = int(input("Digite o segundo número (b): "))
+
+if b != 0:
+    resultado = a / b
+    print(f"A divisão de {a} por {b} é: {resultado}")
+else:
+    print("Divisão Impossível")
